@@ -1,6 +1,13 @@
 import java.util.*;
 
 public class basics {
+
+    // *********** Functions ************
+    public static void calculateSum(int a, int b) { // Parameters
+        int sum = a + b;
+        System.out.println("The sum is: " + sum);
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -69,17 +76,17 @@ public class basics {
         // int n = sc.nextInt();
         // int[] arr = new int[n];
         // for (int i = 0; i < arr.length; i++) {
-        //     System.out.println("Enter the element at index " + i + ": ");
-        //     arr[i] = sc.nextInt();
+        // System.out.println("Enter the element at index " + i + ": ");
+        // arr[i] = sc.nextInt();
         // }
         // int evenSum = 0;
         // int oddSum = 0;
         // for (int i = 0; i < arr.length; i++) {
-        //     if (arr[i] % 2 == 0) {
-        //         evenSum += arr[i];
-        //     } else {
-        //         oddSum += arr[i];
-        //     }
+        // if (arr[i] % 2 == 0) {
+        // evenSum += arr[i];
+        // } else {
+        // oddSum += arr[i];
+        // }
         // }
         // System.out.println("Sum of even numbers: " + evenSum);
         // System.out.println("Sum of odd numbers: " + oddSum);
@@ -89,7 +96,7 @@ public class basics {
         // int num = sc.nextInt();
         // int factorial = 1;
         // for (int i =1; i<=num; i++) {
-        //     factorial *= i;
+        // factorial *= i;
         // }
         // System.out.println("Factorial of " + num + " is: " + factorial);
 
@@ -97,37 +104,37 @@ public class basics {
         // System.out.println("Enter the number: ");
         // int num = sc.nextInt();
         // for (int i = 1; i <= 10; i++) {
-        //     System.out.println(num + " x " + i + " = " + (num * i));
+        // System.out.println(num + " x " + i + " = " + (num * i));
         // }
 
         // right angle triangle pattern
         // System.out.println("Enter the number: ");
         // int num = sc.nextInt();
         // for(int i = 1; i<=num; i++){
-        //     for(int j=1; j<=i; j++){
-        //         System.out.print("*" + " ");
-        //     }
-        //     System.out.println();
+        // for(int j=1; j<=i; j++){
+        // System.out.print("*" + " ");
+        // }
+        // System.out.println();
         // }
 
         // inverted right angle triangle pattern
         // System.out.println("Enter the number: ");
         // int num = sc.nextInt();
         // for(int i = num; i>=1; i--){
-        //     for(int j=1; j<=i; j++){
-        //         System.out.print("*" + " ");
-        //     }
-        //     System.out.println();
+        // for(int j=1; j<=i; j++){
+        // System.out.print("*" + " ");
+        // }
+        // System.out.println();
         // }
 
         // number pattern half pyramid
         // System.out.println("Enter the number: ");
         // int num = sc.nextInt();
         // for(int i = 1; i<=num; i++){
-        //     for(int j=1; j<=i; j++){
-        //         System.out.print(j + " ");
-        //     }
-        //     System.out.println();
+        // for(int j=1; j<=i; j++){
+        // System.out.print(j + " ");
+        // }
+        // System.out.println();
         // }
 
         // character pattern half pyramid
@@ -135,21 +142,21 @@ public class basics {
         // int num = sc.nextInt();
         // char ch = 'A';
         // for(int i = 1; i<=num; i++){
-        //     for(int j=1; j<=i; j++){
-        //         System.out.print(ch + " ");
-        //         ch++;
-        //     }
-        //     System.out.println();
+        // for(int j=1; j<=i; j++){
+        // System.out.print(ch + " ");
+        // ch++;
+        // }
+        // System.out.println();
         // }
 
         // inverted number pattern half pyramid
         // System.out.println("Enter the number: ");
         // int num = sc.nextInt();
         // for(int i = num; i>=1; i--){
-        //     for(int j=1; j<=i; j++){
-        //         System.out.print(j + " ");
-        //     }
-        //     System.out.println();
+        // for(int j=1; j<=i; j++){
+        // System.out.print(j + " ");
+        // }
+        // System.out.println();
         // }
 
         // Floyd's triangle pattern
@@ -157,28 +164,34 @@ public class basics {
         // int num = sc.nextInt();
         // int counter = 1;
         // for(int i = 1; i<=num; i++){
-        //     for(int j=1; j<=i; j++){
-        //         System.out.print(counter + " ");
-        //         counter++;
-        //     }
-        //     System.out.println();
+        // for(int j=1; j<=i; j++){
+        // System.out.print(counter + " ");
+        // counter++;
+        // }
+        // System.out.println();
         // }
 
         // 0-1 pattern half pyramid
         // System.out.println("Enter the number: ");
         // int num = sc.nextInt();
         // for(int i = 1; i<=num; i++){
-        //     for(int j=1; j<=i; j++){
-        //         if((i + j) % 2 == 0){
-        //             System.out.print("1" + " ");
-        //         } else {
-        //             System.out.print("0" + " ");
-        //         }
-        //     }
-        //     System.out.println();
+        // for(int j=1; j<=i; j++){
+        // if((i + j) % 2 == 0){
+        // System.out.print("1" + " ");
+        // } else {
+        // System.out.print("0" + " ");
+        // }
+        // }
+        // System.out.println();
         // }
 
-        
+        // *********** Functions ************
+        System.out.println("Enter the first number: ");
+        int a = sc.nextInt();
+        System.out.println("Enter the second number: ");
+        int b = sc.nextInt();
+        calculateSum(a, b); //Arguments
+
         sc.close();
     }
 }
