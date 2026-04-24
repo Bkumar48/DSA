@@ -3,11 +3,18 @@ import java.util.*;
 public class basics {
 
     // *********** Functions ************
-    public static void calculateSum(int a, int b) { // Parameters
-        int sum = a + b;
-        System.out.println("The sum is: " + sum);
-    }
+    // public static void calculateSum(int a, int b) { // Parameters
+    //     int sum = a + b;
+    //     System.out.println("The sum is: " + sum); 
+    // }
 
+    public static int factorial(int n){
+        int factorial = 1;
+        for (int i =1; i<=n; i++) {
+            factorial *= i;
+        }
+        return factorial;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -186,11 +193,12 @@ public class basics {
         // }
 
         // *********** Functions ************
-        System.out.println("Enter the first number: ");
+        System.out.println("Enter the number: ");
         int a = sc.nextInt();
-        System.out.println("Enter the second number: ");
-        int b = sc.nextInt();
-        calculateSum(a, b); //Arguments
+        // System.out.println("Enter the second number: ");
+        // int b = sc.nextInt();
+        // calculateSum(a, b); //Arguments
+        System.out.println(factorial(a));
 
         sc.close();
     }
