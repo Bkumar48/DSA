@@ -8,12 +8,32 @@ public class basics {
     //     System.out.println("The sum is: " + sum); 
     // }
 
-    public static int factorial(int n){
-        int factorial = 1;
-        for (int i =1; i<=n; i++) {
-            factorial *= i;
+    // Factorial of a number
+    // public static int factorial(int n){
+    //     int factorial = 1;
+    //     for (int i =1; i<=n; i++) {
+    //         factorial *= i;
+    //     }
+    //     return factorial;
+    // }
+
+    // Binomial Coefficient nCr = n! / (r! * (n-r)!)
+    // public static int binomialCoefficient(int n, int r){
+    //     int numerator = factorial(n);
+    //     int denominator = factorial(r) * factorial(n - r);
+    //     return numerator / denominator;
+    // }
+
+    public static boolean isPrime(int n){
+        // Corner cases
+        if (n <= 2) return true;
+        
+        for(int i=2; i*i<= n; i++){
+            if(n % i == 0){
+                return false;
+            }
         }
-        return factorial;
+        return true;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -193,12 +213,15 @@ public class basics {
         // }
 
         // *********** Functions ************
-        System.out.println("Enter the number: ");
-        int a = sc.nextInt();
+        // System.out.println("Enter the first number: ");
+        // int a = sc.nextInt();
         // System.out.println("Enter the second number: ");
         // int b = sc.nextInt();
-        // calculateSum(a, b); //Arguments
-        System.out.println(factorial(a));
+        // // calculateSum(a, b); //Arguments
+        // // System.out.println(factorial(a));
+        // System.out.println(binomialCoefficient(a, b));
+
+        System.out.println(isPrime(10));
 
         sc.close();
     }
