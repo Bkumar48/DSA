@@ -24,17 +24,29 @@ public class basics {
     //     return numerator / denominator;
     // }
 
-    public static boolean isPrime(int n){
-        // Corner cases
-        if (n <= 2) return true;
+    // Check if a number is prime or not
+    // public static boolean isPrime(int n){
+    //     // Corner cases
+    //     if (n <= 2) return true;
         
-        for(int i=2; i*i<= n; i++){
-            if(n % i == 0){
-                return false;
-            }
-        }
-        return true;
-    }
+    //     for(int i=2; i*i<= n; i++){
+    //         if(n % i == 0){
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
+
+    // // Print all prime numbers in a range
+    // public static void PrimesinRange (int n){
+    //     for(int i = 2; i<=n; i++){
+    //         if(isPrime(i)){
+    //             System.out.print(i + " ");
+    //         }
+    //     }
+    // }
+
+     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -221,7 +233,7 @@ public class basics {
         // // System.out.println(factorial(a));
         // System.out.println(binomialCoefficient(a, b));
 
-        System.out.println(isPrime(10));
+        PrimesinRange(10);
 
         sc.close();
     }
