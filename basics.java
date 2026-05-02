@@ -4,49 +4,70 @@ public class basics {
 
     // *********** Functions ************
     // public static void calculateSum(int a, int b) { // Parameters
-    //     int sum = a + b;
-    //     System.out.println("The sum is: " + sum); 
+    // int sum = a + b;
+    // System.out.println("The sum is: " + sum);
     // }
 
     // Factorial of a number
     // public static int factorial(int n){
-    //     int factorial = 1;
-    //     for (int i =1; i<=n; i++) {
-    //         factorial *= i;
-    //     }
-    //     return factorial;
+    // int factorial = 1;
+    // for (int i =1; i<=n; i++) {
+    // factorial *= i;
+    // }
+    // return factorial;
     // }
 
     // Binomial Coefficient nCr = n! / (r! * (n-r)!)
     // public static int binomialCoefficient(int n, int r){
-    //     int numerator = factorial(n);
-    //     int denominator = factorial(r) * factorial(n - r);
-    //     return numerator / denominator;
+    // int numerator = factorial(n);
+    // int denominator = factorial(r) * factorial(n - r);
+    // return numerator / denominator;
     // }
 
     // Check if a number is prime or not
     // public static boolean isPrime(int n){
-    //     // Corner cases
-    //     if (n <= 2) return true;
-        
-    //     for(int i=2; i*i<= n; i++){
-    //         if(n % i == 0){
-    //             return false;
-    //         }
-    //     }
-    //     return true;
+    // // Corner cases
+    // if (n <= 2) return true;
+
+    // for(int i=2; i*i<= n; i++){
+    // if(n % i == 0){
+    // return false;
+    // }
+    // }
+    // return true;
     // }
 
     // // Print all prime numbers in a range
     // public static void PrimesinRange (int n){
-    //     for(int i = 2; i<=n; i++){
-    //         if(isPrime(i)){
-    //             System.out.print(i + " ");
-    //         }
-    //     }
+    // for(int i = 2; i<=n; i++){
+    // if(isPrime(i)){
+    // System.out.print(i + " ");
+    // }
+    // }
     // }
 
-     
+    // Function overloading using data types
+    // public static void sum(int a, int b) {
+    //     System.out.println("The sum is: " + (a + b));
+    // }
+
+    // public static void sum(float a, float b) {
+    //     System.out.println("The sum is: " + (a + b));
+    // }
+
+    // function for binary to decimal
+    public static void binaryToDecimal(int n) {
+        int decimal = 0;
+        int power = 0;
+
+        while(n > 0){
+            int lastDigit = n % 10;
+            decimal += lastDigit * Math.pow(2, power);
+            power++;
+            n = n / 10;
+        }
+        System.out.println("Decimal equivalent: " + decimal);
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -233,7 +254,12 @@ public class basics {
         // // System.out.println(factorial(a));
         // System.out.println(binomialCoefficient(a, b));
 
-        PrimesinRange(10);
+        // PrimesinRange(10);
+
+        // sum(5, 10);
+        // sum(5.5f, 10.5f);
+
+        binaryToDecimal(101);
 
         sc.close();
     }
