@@ -56,18 +56,31 @@ public class basics {
     // }
 
     // function for binary to decimal
-    public static void binaryToDecimal(int n) {
-        int decimal = 0;
-        int power = 0;
+    // public static void binaryToDecimal(int n) {
+    //     int decimal = 0;
+    //     int power = 0;
 
-        while(n > 0){
-            int lastDigit = n % 10;
-            decimal += lastDigit * Math.pow(2, power);
-            power++;
-            n = n / 10;
-        }
-        System.out.println("Decimal equivalent: " + decimal);
-    }
+    //     while(n > 0){
+    //         int lastDigit = n % 10;
+    //         decimal += lastDigit * Math.pow(2, power);
+    //         power++;
+    //         n = n / 10;
+    //     }
+    //     System.out.println("Decimal equivalent: " + decimal);
+    // }
+
+    // public static void decimalToBinary(int n) {
+
+    //     StringBuilder binary = new StringBuilder();
+    
+    //         while(n > 0){
+    //             int lastDigit = n % 2;
+    //             binary.append(lastDigit);
+    //             n = n / 2;
+    //         }
+    //         binary.reverse();
+    //         System.out.println("Binary equivalent: " + binary.toString());
+    // }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -259,7 +272,9 @@ public class basics {
         // sum(5, 10);
         // sum(5.5f, 10.5f);
 
-        binaryToDecimal(101);
+        // binaryToDecimal(101);
+
+        // decimalToBinary(10);
 
         sc.close();
     }
